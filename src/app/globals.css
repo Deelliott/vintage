@@ -96,3 +96,15 @@ p {
 .reset-button:hover {
   background-color: #eee4b0;
 }
+
+
+.title {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  color: rgb(99, 134, 232);
+  text-decoration: wavy;
+  font-style: italic;
+  font-size: 20px;
+  
+  text-shadow: 1px 1px  rgb(237, 124, 82);
+}

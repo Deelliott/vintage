@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  margin: 40px;
+  background-color: rgb(28, 75, 78);
+}
+
+
+.square {
+  background: #f7f2f2;
+  border: 1.5px solid rgb(92, 36, 40);
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -1px;
+  margin-top: -1px;
+  text-align: center;
+  width: 34px;
+}
+
+.square.x {
+  color: rgb(148, 104, 8);
+}
+
+.square.o {
+  color: rgb(6, 90, 90);
+}
+
+.board-row {
+  display: flex;
+}
+
+p {
+  color: rgb(208, 244, 149);
+  padding-bottom: 10px;
+}
+
+.text {
+  color: beige;
+  text-align: right;
+}
+
+.game {
+  display: flex;
+  align-items: flex-start;
+}
+
+.game-board {
+  margin-right: 20px;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.game-info ol {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+@keyframes blinkBorder {
+  0% { border-color: rgb(252, 233, 25); }
+  50% { border-color: rgb(255, 118, 69); }
+  75% { border-color: rgb(10, 199, 4); }
+  100% { border-color: rgb(242, 23, 23); }
+}
+
+.blinking-border {
+  border: 3px solid rgb(75, 212, 183);
+  animation: blinkBorder 1s infinite;
+}
+
+.reset-button {
+  background-color: #f0f0f0;
+  border: 3px solid #b22929;
+  border-radius: 5px;
+  color: #333;
+  font-size: 14px;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.reset-button:hover {
+  background-color: #eee4b0;
+}

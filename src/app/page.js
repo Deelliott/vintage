@@ -1,6 +1,7 @@
 "use client";
 import {useEffect, useState } from "react";
 
+
 function Square({value, onClick}) {
   const className = `square ${value ? value.toLowerCase() : ""}`;
   return (

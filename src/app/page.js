@@ -117,9 +117,6 @@ export default function Game() {
     
     <div className="game">
       <div className="game-board">
-        <div>
-          <h1>Devon's Vintage Game</h1>
-        </div>
      
         <button className="reset-button" onClick={resetGame}>Start New Game</button>
         <br />
